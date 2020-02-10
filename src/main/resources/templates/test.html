@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Towar</title>
+</head>
+<body>
+    <h1 th:text="${goods.skrot}">Towar</h1>
+    <br>
+    <table border>
+        <tr>
+            <th>Indeks</th>
+            <th>Skrót</th>
+            <th>Nazwa</th>
+            <th>Jednostka</th>
+            <th>Zbiorczy</th>
+            <th>Kod EAN</th>
+            <th>Katalog</th>
+            <th>Stan</th>
+            <th>Zamówione</th>
+            <th>Miejsce</th>
+        </tr>
+        <tr>
+            <td th:text="${goods.id}">00000</td>
+            <td th:text="${goods.skrot}">0000-00</td>
+            <td th:text="${goods.nazwa}">tapeta-0000-00</td>
+            <td th:text="${goods.jm}">pce</td>
+            <td th:text="${goods.zbiorczy}">10</td>
+            <td th:text="${goods.ean}">12345678901234</td>
+            <td th:text="${goods.skrot3}">katalog-DP</td>
+            <td th:text="${goods.ilosc}">0</td>
+            <td th:text="${goods.zamow}">0</td>
+            <td th:text="${goods.miejsce}">BB101010</td>
+        </tr>
+    </table>
+</body>
+</html>
