@@ -9,7 +9,7 @@ import pl.polami.wewportal.dao.GoodsDao;
 import pl.polami.wewportal.domain.Goods;
 
 @Controller
-public class MainController {
+public class TestController {
     @Autowired
     GoodsDao goodsDao;
 

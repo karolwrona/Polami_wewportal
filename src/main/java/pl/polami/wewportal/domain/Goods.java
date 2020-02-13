@@ -1,7 +1,5 @@
 package pl.polami.wewportal.domain;
 
-import org.springframework.stereotype.Controller;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,7 +12,7 @@ public class Goods {
     private int id;
     @Column(name = "NAZPOT", insertable = false, updatable = false)
     private String skrot;
-    @Column(name = "NAZPOT")
+    @Column(name = "NAZDOP")
     private String nazwa;
     @Column(name = "JM")
     private String jm;
